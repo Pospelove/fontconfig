@@ -38,7 +38,7 @@ elif cc.get_id() == 'msvc'
 elif cc.get_id() == 'clang'
   cpp += ['-E', '-P']
 else
-  error('FIXME: implement cc.preprocess')
+  cpp += ['-E', '-P']
 endif
 
 cpp += ['-I', join_paths(meson.current_source_dir(), '..')]
